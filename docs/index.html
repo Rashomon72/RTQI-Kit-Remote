@@ -10,8 +10,8 @@
   <div class="container">
     <h1>Jetson Nano Control</h1>
     <h2 id="status">Status: Loading...</h2>
-    <a href="#" id="start" onclick="openAndClose('https://jetson-nano-control.vercel.app/start')">▶ START</a>
-    <a href="#" id="stop" onclick="openAndClose('https://jetson-nano-control.vercel.app/stop')">■ STOP</a>
+    <a href="#" id="start" onclick="openAndClose('https://rtqi-kit-remote.vercel.app/start')">▶ START</a>
+    <a href="#" id="stop" onclick="openAndClose('https://rtqi-kit-remote.vercel.app/stop')">■ STOP</a>
   </div>
 
   <script>
@@ -30,7 +30,7 @@
 
     async function fetchStatus() {
       try {
-        const res = await fetch('https://jetson-nano-control.vercel.app/status');
+        const res = await fetch('https://rtqi-kit-remote.vercel.app/status');
         const data = await res.json();
         document.getElementById('status').innerText = `Status: ${data.status}`;
       } catch (error) {
