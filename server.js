@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 });
 
 // ----------------- DATABASE CONNECTION -----------------
-const MONGODB_ATLAS_URL = "mongodb+srv://adamkoda2306:AK29$*@cluster0.gcau8.mongodb.net/Control";
+const MONGODB_ATLAS_URL = "mongodb+srv://RTQI:RTQI%40123@btp.ry9kl.mongodb.net/Control";
 async function connectDB() {
   try {
     await mongoose.connect(MONGODB_ATLAS_URL);
