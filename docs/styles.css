@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Glass Card Container */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #00ffe1;
+}
+
+/* Buttons */
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #00b894, #00cec9);
+  box-shadow: 0 4px 15px rgba(0, 206, 201, 0.3);
+}
+
+a#stop {
+  background: linear-gradient(135deg, #d63031, #ff7675);
+  box-shadow: 0 4px 15px rgba(255, 118, 117, 0.3);
+}
+
+a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  a {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
