@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="styles.css"/>
+<title>Multi Device Control</title>
+</head>
+<body>
+
+<div class="container">
+  <h1>Device Remote</h1>
+
+  <select id="deviceSelect"></select>
+
+  <h2 id="status">Status: Select Device</h2>
+
+  <button class="start-btn" onclick="sendControl('start')">▶ START</button>
+  <button class="stop-btn" onclick="sendControl('stop')">■ STOP</button>
+</div>
+
+<!-- Floating Add Button -->
+<button class="fab" onclick="openModal()">+</button>
+
+<!-- Popup Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h3>Add Device</h3>
+    <input type="text" id="deviceNameInput" placeholder="Enter device name"/>
+    <button onclick="addDevice()">Add</button>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<!-- Link External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
